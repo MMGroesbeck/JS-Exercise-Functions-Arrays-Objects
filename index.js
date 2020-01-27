@@ -62,7 +62,7 @@ function makePersonObject(idParam, nameParam, emailParam) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(persObj) {
-  return 'Hello, my name is ' + persObj.name;
+  return `Hello, my name is ${persObj.name}`;
 }
 
 /**
@@ -85,7 +85,7 @@ function makeSmartPerson(nameParam) {
       return num1 + num2;
     },
     speak: function(){
-      return 'Hello, my name is ' + nameParam;
+      return `Hello, my name is ${nameParam}`;
     }
   }
 }
@@ -150,7 +150,7 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   const car = inventory[index];
-  return 'This is a ' + car.car_make + ' ' + car.car_model;
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 /**
@@ -166,7 +166,7 @@ function getCarInfoByIndex(inventory, index) {
 */
 function getLastCarInfo(inventory) {
   const car = inventory[inventory.length - 1];
-  return 'This is a ' + car.car_make + ' ' + car.car_model;
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 /**
@@ -185,7 +185,7 @@ function getCarInfoById(inventory, idParam) {
   /* code here */
   for (car of inventory){
     if (car.id === idParam){
-      return 'This is a ' + car.car_make + ' ' + car.car_model;
+      return `This is a ${car.car_make} ${car.car_model}`;
     }
   }
 }
